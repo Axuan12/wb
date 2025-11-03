@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <style>
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #5a0101, #2a163b, #a855f7);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+ 
+  .card-hover {
+    transition: all 0.3s ease;
+    border-radius: 0.75rem;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.05);
+  }
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+
+  <header class="gradient-bg text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold">Joshua Palabrica</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-blue-200">Home</a>
+        <a href="#about" class="hover:text-blue-200">About</a>
+        <a href="#skills" class="hover:text-blue-200">Skills</a>
+        <a href="#projects" class="hover:text-blue-200">Projects</a>
+        <a href="#contact" class="hover:text-blue-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section id="home" class="gradient-bg text-white text-center py-20">
+    <h2 class="text-5xl font-bold mb-4">Welcome to My Website</h2>
+    <p class="text-xl mb-8">I create modern, functional, and responsive web experiences</p>
+    <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Get in Touch</a>
+  </section>
+
+  
+  <section id="about" class="py-20 bg-white text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-4xl font-bold mb-10">About Me</h3>
+      <div class="flex flex-col md:flex-row items-center md:space-x-10">
+        <img src="ywa.jpg" alt="Profile" class="rounded-full shadow-lg mb-6 md:mb-0 w-48 h-48 object-cover">
+        <div class="text-left">
+          <h4 class="text-2xl font-semibold mb-3">I'm Joshua Palabrica</h4>
+          <p class="text-lg text-gray-600 leading-relaxed mb-4">
+            A passionate web developer from the Philippines. I turn ideas into interactive and visually appealing websites using HTML, CSS, and JavaScript. My goal is to create efficient and engaging digital experiences.
+          </p>
+          <p class="text-gray-700"><strong>💡 Motto:</strong> “Code with purpose, design with passion.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="skills" class="py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h3 class="text-4xl font-bold mb-10">My Skills</h3>
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <div>
+          <p class="font-semibold">HTML</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 95%;"></div>
+          </div>
+          <p class="font-semibold">CSS</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 90%;"></div>
+          </div>
+          <p class="font-semibold">JavaScript</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div>
+          <p class="font-semibold">UI/UX Design</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 75%;"></div>
+          </div>
+          <p class="font-semibold">Firebase</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 70%;"></div>
+          </div>
+          <p class="font-semibold">Java</p>
+          <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 65%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="projects" class="py-20 bg-white text-center">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold mb-10">My Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card-hover bg-gray-50 p-6 rounded-xl shadow text-left">
+          <img src="pipe-network.jpg" class="rounded-lg mb-4" alt="Project 1">
+          <h4 class="text-xl font-semibold mb-2">Smart Drainage Monitoring System</h4>
+          <p class="text-gray-600 text-sm">A flood warning and drainage monitoring system that provides real-time data and alerts.</p>
+        </div>
+        <div class="card-hover bg-gray-50 p-6 rounded-xl shadow text-left">
+          <img src="Android-Apps-security.jpg" class="rounded-lg mb-4" alt="Project 2">
+          <h4 class="text-xl font-semibold mb-2">Android Security App</h4>
+          <p class="text-gray-600 text-sm">An app integrating Firebase login, GPS tracking, and camera access for security monitoring.</p>
+        </div>
+        <div class="card-hover bg-gray-50 p-6 rounded-xl shadow text-left">
+          <img src="Career-readiness-project-findings-blog.png" class="rounded-lg mb-4" alt="Project 3">
+          <h4 class="text-xl font-semibold mb-2">Career Awareness Website</h4>
+          <p class="text-gray-600 text-sm">An educational website to guide students in exploring and preparing for career paths.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-6 max-w-xl">
+      <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
+      <p class="text-gray-600 mb-4">
+        I’d love to hear from you! Whether you want to collaborate, ask a question, or just say hi — feel free to reach out.
+      </p>
+      <p class="text-lg font-medium mb-8">
+        📧 Get in touch with my email:
+        <a href="mailto:joshuapalabrica@gmail.com" class="text-blue-600 hover:underline">joshuapalabrica@gmail.com</a>
+      </p>
+
+<form action="https://formspree.io/f/mkgpkebz" method="POST"
+  class="backdrop-blur-md bg-white/70 border border-white/30 shadow-xl rounded-2xl p-8 space-y-6 transition-all duration-300 hover:shadow-2xl">
+
+  <h4 class="text-2xl font-bold text-gray-800 mb-2">💬 Send Me a Message</h4>
+  <p class="text-gray-600 text-sm mb-4">I’ll get back to you as soon as possible!</p>
+
+
+  <div>
+    <label for="name" class="block text-left text-gray-700 font-semibold mb-2">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required
+      class="w-full bg-white/80 border border-gray-300 rounded-xl px-4 py-3 focus:ring-4 focus:ring-purple-400 focus:border-purple-500 outline-none transition-all duration-300">
+  </div>
+
+
+  <div>
+    <label for="email" class="block text-left text-gray-700 font-semibold mb-2">Email</label>
+    <input type="email" id="email" name="email" placeholder="your@email.com" required
+      class="w-full bg-white/80 border border-gray-300 rounded-xl px-4 py-3 focus:ring-4 focus:ring-purple-400 focus:border-purple-500 outline-none transition-all duration-300">
+  </div>
+
+
+  <div>
+    <label for="message" class="block text-left text-gray-700 font-semibold mb-2">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required
+      class="w-full bg-white/80 border border-gray-300 rounded-xl px-4 py-3 focus:ring-4 focus:ring-purple-400 focus:border-purple-500 outline-none transition-all duration-300"></textarea>
+  </div>
+
+
+  <button type="submit"
+    class="w-full py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 shadow-md hover:shadow-lg hover:scale-[1.02] transition-transform duration-200">
+    ✉️ Send Message
+  </button>
+</form>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 Joshua Palabrica. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
